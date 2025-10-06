@@ -25,10 +25,6 @@ interface AgendaDatabaseDao {
 
     @Delete
     fun Delete(agenda: Agenda)
-)
-
-
-
 
 
 }
