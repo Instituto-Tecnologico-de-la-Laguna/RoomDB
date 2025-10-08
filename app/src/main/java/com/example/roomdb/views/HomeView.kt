@@ -50,8 +50,9 @@ fun HomeView(navController: NavController) {
 }
 @Composable
 fun ContentHomeView(it: PaddingValues){
-    Column(){
-        LazyColumn(contentPadding = it){
+    Column() {
+        LazyColumn(contentPadding = it) {
+        }
     }
 }
 
