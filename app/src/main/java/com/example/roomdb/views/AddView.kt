@@ -12,6 +12,8 @@ import com.example.roomdb.components.MainButtons
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.navigation.NavController
+import com.example.roomdb.components.MainScreen
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -25,7 +27,7 @@ fun AddView(navController:NavController){
 
             ),
                 navigationIcon = {
-                    MainButtons(icon=Icons.Default.ArrowBack){
+                    MainButtons(icon = Icons.Default.ArrowBack,true){
                         navController.popBackStack()
                     }
                 }
@@ -38,5 +40,7 @@ fun AddView(navController:NavController){
 
 @Composable
 fun ContentAddView(it: PaddingValues){
+    MainScreen("",""
+        ,{})
 
 }

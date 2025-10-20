@@ -9,9 +9,10 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 
 @Composable
-fun MainButtons(tipo: Boolean){
+fun MainButtons(icon: ImageVector, tipo:Boolean,onClick: () -> Unit){
     OutlinedButton(
         onClick = { /*TODO*/ },
         enabled = true
